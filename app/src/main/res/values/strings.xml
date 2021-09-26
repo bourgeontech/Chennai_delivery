@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">E-store Delivery Boy</string>
+    <string name="No_orders">No Orders</string>
+    <string name="all_orders">All Orders</string>
+</resources>

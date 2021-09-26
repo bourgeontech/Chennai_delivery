@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_bg"
+    tools:context=".NewOrderDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/yellow_ring_bg" />
+
+
+        <RelativeLayout
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:rotation="180"
+                android:src="@drawable/forward_arrow"
+                app:tint="@color/blue" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topLayout"
+        android:clipToPadding="false"
+        android:paddingTop="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="10"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/homepagebaukasten_bold"
+                android:maxLines="3"
+                android:text="Customer Order ID :"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="10"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/homepagebaukasten_bold"
+                    android:maxLines="3"
+                    android:text=""
+                    android:textColor="@color/blue"
+                    android:textSize="19sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/custCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:fontFamily="@font/homepagebaukasten_bold"
+                        android:textColor="@color/blue"
+                        android:text=""
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/telephone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/homepagebaukasten_bold"
+                    android:textColor="@color/blue"
+                    android:text=""
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tvcash"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="collect cash"
+                    android:fontFamily="@font/homepagebaukasten_bold"
+                    android:gravity="right"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cashlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tvAmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:fontFamily="@font/homepagebaukasten_bold"
+                android:gravity="right"
+                android:textColor="#8C1010"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="9">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/homepagebaukasten_bold"
+                    android:maxLines="1"
+                    android:text="Destination : "
+                    android:textColor="@color/blue"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/homepagebaukasten_book"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/custDirction"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:src="@drawable/direction" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylerView_Deliver_shops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/layout_animation"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="always" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/btndeliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_green_bg"
+                    android:fontFamily="@font/baukasten_bold"
+                    android:gravity="center"
+                    android:text="Deliver"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/topLayout"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/curved_blue"
+        android:fontFamily="@font/iciel_gotham_medium"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="ORDER VIEW"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+</RelativeLayout>
+</layout>

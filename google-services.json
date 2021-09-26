@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "23706783300",
+    "firebase_url": "https://estore-3edc1.firebaseio.com",
+    "project_id": "estore-3edc1",
+    "storage_bucket": "estore-3edc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23706783300:android:64ebd96bbb7bd4418f7611",
+        "android_client_info": {
+          "package_name": "com.online.estoreandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23706783300-qpbc54nhdk3cki7dhu6jteosqq3g747t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.online.estoreandroid",
+            "certificate_hash": "51a3e9735137ff46a8b8b993ff604dac887b3875"
+          }
+        },
+        {
+          "client_id": "23706783300-tfefii8m1di6qcmscae6oggn4t0hpdo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr99m6AS9pQCVgbE1AVVMseNV4Ikigqqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23706783300-tfefii8m1di6qcmscae6oggn4t0hpdo9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "23706783300-17h1u8gk4a46d1m07thet7ebn3tme6rt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.estore.estore"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23706783300:android:4a5f36ad905b66238f7611",
+        "android_client_info": {
+          "package_name": "com.online.estoreshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23706783300-dru0e5pjovc664dnf8c6fnkdb67km9c6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.online.estoreshop",
+            "certificate_hash": "51a3e9735137ff46a8b8b993ff604dac887b3875"
+          }
+        },
+        {
+          "client_id": "23706783300-fnpp533et0vdr12pbce175029dtedhp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.online.estoreshop",
+            "certificate_hash": "0bff73a584617eac446b1668ed43e73f6ef935b0"
+          }
+        },
+        {
+          "client_id": "23706783300-tfefii8m1di6qcmscae6oggn4t0hpdo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr99m6AS9pQCVgbE1AVVMseNV4Ikigqqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23706783300-tfefii8m1di6qcmscae6oggn4t0hpdo9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "23706783300-17h1u8gk4a46d1m07thet7ebn3tme6rt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.estore.estore"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/yellow_ring_bg" />
+
+
+        <RelativeLayout
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:rotation="180"
+                android:src="@drawable/forward_arrow"
+                app:tint="@color/blue" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/curved_white"
+            android:drawableStart="@drawable/search_icon"
+            android:drawablePadding="24dp"
+            android:fontFamily="@font/iciel_gotham_medium"
+            android:hint="search categories"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topLayout"
+        android:clipToPadding="false"
+        android:layoutAnimation="@anim/layout_animation"
+        android:overScrollMode="always"
+        android:paddingStart="24dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <TextView
+        android:id="@+id/titleImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/topLayout"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/curved_blue"
+        android:fontFamily="@font/iciel_gotham_medium"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="Notifications"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleImage"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/login_bg2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/baukasten_book"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="No notifications..."
+            android:textColor="@color/blue"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>
